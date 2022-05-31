@@ -78,3 +78,5 @@ links
 * [Debian Wiki page about this bug](https://wiki.debian.org/SSLkeys)
 * [Tools and scripts to create the keys](https://github.com/badkeys/debianssltools)
 * [When Private Keys are Public, research paper about this bug published in 2009](https://hovav.net/ucsd/papers/yrses09.html)
+* [key_generator](https://github.com/CVE-2008-0166/key_generator) and [private_keys](https://github.com/CVE-2008-0166/private_keys) created by Rob Stradling (openssl only)
+* [Mirror of old tools/keys by HD Moore](https://github.com/g0tmi1k/debian-ssh)
