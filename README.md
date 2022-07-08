@@ -36,11 +36,16 @@ Notes about the Debian OpenSSL bug:
   and HPPA are identical.
 * Keys created on MIPS are different, however given the rare use
   of that plattform they are not considered.
+* Elliptic curve / ECDSA keys are supported by openssl, but not
+  by openssh. A large number of possible curves is supported, but
+  only the NIST P-256 and P-384 curves are commonly in use in TLS
+  TLS certificates.
 
 This repo currently includes:
 * RSA keys with 1024, 2048, 3072 and 4096 bit (FIXME: some be32/ssh
   keys missing, will be added soon)
 * DSA keys with 1024 bit (only openssh)
+* ECDSA keys with the P-256 and P-384 curves (only openssl).
 * Created with PIDs from 0 to 32767
 * Keys created with both openssl and ssh-keygen (dirs ssl/ssh)
 * Keys created on little endian 32 bit (x86) and 64 bit (amd64)
@@ -69,7 +74,11 @@ rsa2048
   be32...
 rsa...
 dsa1024
- openssh
+ ssh
+  ...
+ecp256
+ ssl
+  ...
 ```
 
 links
