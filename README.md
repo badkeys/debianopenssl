@@ -42,11 +42,10 @@ Notes about the Debian OpenSSL bug:
   TLS certificates.
 
 This repo currently includes:
-* RSA keys with 1024, 2048, 3072 and 4096 bit (FIXME: some be32/ssh
-  keys missing, will be added soon)
-* DSA keys with 1024 bit (only openssh)
+* RSA keys with 1024, 2048, 3072 and 4096 bit.
+* DSA keys with 1024 bit (only openssh).
 * ECDSA keys with the P-256 and P-384 curves (only openssl).
-* Created with PIDs from 0 to 32767
+* Created with PIDs from 0 to 32767.
 * Keys created with both openssl and ssh-keygen (dirs ssl/ssh)
 * Keys created on little endian 32 bit (x86) and 64 bit (amd64)
   architectures and common big endian 32 bit (PowerPC/SPARC/HPPA)
